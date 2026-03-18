@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceylon Black Reserve — Coffeen SL</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/details.css">
+</head>
+<body>
+<div id="loader"><div class="loader-logo">Coffeen <span>SL</span></div><div class="loader-bar"></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">Coffeen <span>SL</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="blog.html">Journal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="order.html" class="nav-cta">Order Now</a></li>
+  </ul>
+  <button class="nav-toggle"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- PRODUCT DETAIL -->
+<section class="product-detail">
+  <div class="pd-visual reveal-left">
+    <div class="pd-img-main">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&h=800&fit=crop" alt="Ceylon Black Reserve" id="mainImg">
+    </div>
+    <div class="pd-thumbnails">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=150&h=120&fit=crop" alt="1" class="pd-thumb active" onclick="switchImg(this,'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&h=800&fit=crop')">
+      <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=150&h=120&fit=crop" alt="2" class="pd-thumb" onclick="switchImg(this,'https://images.unsplash.com/photo-1534778101976-62847782c213?w=700&h=800&fit=crop')">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=150&h=120&fit=crop" alt="3" class="pd-thumb" onclick="switchImg(this,'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&h=800&fit=crop')">
+    </div>
+  </div>
+
+  <div class="pd-info">
+    <div class="pd-breadcrumb reveal">
+      <a href="menu.html">Menu</a> <span>·</span> <a href="menu.html">Espresso</a>
+    </div>
+
+    <div class="pd-badge reveal" data-delay="1">Bestseller · Single Origin</div>
+
+    <h1 class="reveal" data-delay="1">Ceylon Black<br><em>Reserve</em></h1>
+
+    <div class="pd-price reveal" data-delay="2">LKR <strong>650</strong></div>
+
+    <p class="pd-desc reveal" data-delay="2">
+      Our flagship espresso — a double-pulled single-origin from Nuwara Eliya highlands, grown at 1,800m elevation on the Wattakele Estate. Expect a deep chocolatey body, a velvet finish, and a brightness that unfolds on the back palate.
+    </p>
+
+    <div class="pd-tasting reveal" data-delay="3">
+      <h4>Tasting Notes</h4>
+      <div class="tasting-bars">
+        <div class="tasting-bar">
+          <span>Body</span>
+          <div class="bar-track"><div class="bar-fill" style="--pct:85%"></div></div>
+          <span>85%</span>
+        </div>
+        <div class="tasting-bar">
+          <span>Acidity</span>
+          <div class="bar-track"><div class="bar-fill" style="--pct:40%"></div></div>
+          <span>40%</span>
+        </div>
+        <div class="tasting-bar">
+          <span>Sweetness</span>
+          <div class="bar-track"><div class="bar-fill" style="--pct:65%"></div></div>
+          <span>65%</span>
+        </div>
+        <div class="tasting-bar">
+          <span>Bitterness</span>
+          <div class="bar-track"><div class="bar-fill" style="--pct:50%"></div></div>
+          <span>50%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pd-meta reveal" data-delay="4">
+      <div class="meta-item">
+        <span class="meta-label">Origin</span>
+        <span class="meta-value">Nuwara Eliya, Sri Lanka</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Process</span>
+        <span class="meta-value">Washed</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Altitude</span>
+        <span class="meta-value">1,800m</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Variety</span>
+        <span class="meta-value">Arabica S795</span>
+      </div>
+    </div>
+
+    <div class="pd-options reveal" data-delay="4">
+      <div class="option-group">
+        <label>Size</label>
+        <div class="option-btns">
+          <button class="opt-btn active">Single (30ml)</button>
+          <button class="opt-btn">Double (60ml)</button>
+          <button class="opt-btn">Long Black</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pd-actions reveal" data-delay="5">
+      <button class="btn btn-primary" onclick="addToCart()"><span>Add to Order</span></button>
+      <a href="order.html" class="btn btn-outline">View Cart</a>
+    </div>
+
+    <div class="pd-note reveal" data-delay="5">
+      ✦ Available for dine-in and takeaway. Not available for delivery.
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="related-section">
+  <div style="padding:0 4rem 2rem;">
+    <span class="section-eyebrow">You Might Also Love</span>
+    <h2 class="section-title" style="font-size:2rem;"><em>Related</em> Drinks</h2>
+  </div>
+  <div class="related-grid">
+    <a href="coffee-details.html" class="related-card reveal" data-delay="1">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=250&fit=crop" alt="Coconut Latte">
+      <div class="rc-body"><h4>Coconut Spice Latte</h4><span>LKR 890</span></div>
+    </a>
+    <a href="coffee-details.html" class="related-card reveal" data-delay="2">
+      <img src="https://images.unsplash.com/photo-1572286258217-215cf8e8f06d?w=400&h=250&fit=crop" alt="Cold Brew">
+      <div class="rc-body"><h4>Midnight Cold Brew</h4><span>LKR 750</span></div>
+    </a>
+    <a href="coffee-details.html" class="related-card reveal" data-delay="3">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=250&fit=crop" alt="Pour Over">
+      <div class="rc-body"><h4>Kandy Pour Over</h4><span>LKR 950</span></div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo" style="font-size:1.4rem;">Coffeen <span>SL</span></div><p>Artisan coffee in the heart of Colombo.</p><div class="footer-socials"><a href="#">in</a><a href="#">ig</a><a href="#">fb</a></div></div>
+    <div class="footer-col"><h4>Navigate</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+    <div class="footer-col"><h4>Visit</h4><ul><li><a href="reservations.html">Reservations</a></li><li><a href="order.html">Order Online</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div class="footer-col"><h4>Hours</h4><ul><li><a>Mon–Fri: 7am–10pm</a></li><li><a>Sat: 8am–11pm</a></li><li><a>Sun: 8am–9pm</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Coffeen SL.</p><p>Cinnamon Gardens, Colombo 07</p></div>
+</footer>
+
+<script src="../js/global.js"></script>
+<script>
+function switchImg(thumb, src) {
+  document.getElementById('mainImg').src = src;
+  document.querySelectorAll('.pd-thumb').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+document.querySelectorAll('.opt-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.option-btns').querySelectorAll('.opt-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+function addToCart() {
+  const size = document.querySelector('.opt-btn.active')?.textContent || 'Single';
+  showToast(`Ceylon Black Reserve (${size}) added to cart!`);
+}
+</script>
+</body>
+</html>
